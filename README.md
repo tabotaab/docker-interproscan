@@ -19,7 +19,7 @@ If not - try downloading the file again as it may be a corrupted copy.
 ```
 tar -pxvzf interproscan-5.21-60.0-*-bit.tar.gz
 ```
- .
+
 
 **2) Installing Panther Models**
 ```
@@ -34,7 +34,7 @@ If not - try downloading the file again as it may be a corrupted copy.
 cd [InterProScan5 home]/data
 tar -pxvzf panther-data-10.0.tar.gz
 ```
-.
+
 
 **3) Using the Pre-calculated Match Lookup Service**
 
@@ -61,7 +61,7 @@ test if this command works
 ```
 java -Xmx2000m -jar server-5.21-60.0-jetty-console.war --sslProxied --port 8000 --forwarded --headless
 ```
-.
+
 ** RUN **
 ```
 docker run --rm \
@@ -72,7 +72,7 @@ docker run --rm \
 -w /interproscan/interproscan-5.21-60.0 \
 -it interproscan:5.21-60.0
 ```
-.
+
 ** TEST **
 ```
 ./interproscan.sh -i test_proteins.fasta -d /mydata -T /mytmp -dp
