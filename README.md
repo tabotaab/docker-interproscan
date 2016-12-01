@@ -35,7 +35,6 @@ cd [InterProScan5 home]/data
 tar -pxvzf panther-data-10.0.tar.gz
 ```
 
-
 **3) Using the Pre-calculated Match Lookup Service**
 
 Create and enter a suitable directory
@@ -61,7 +60,6 @@ test if this command works
 ```
 java -Xmx2000m -jar server-5.21-60.0-jetty-console.war --sslProxied --port 8000 --forwarded --headless
 ```
-
 ** RUN **
 ```
 docker run --rm \
