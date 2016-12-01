@@ -60,7 +60,7 @@ test if this command works
 ```
 java -Xmx2000m -jar server-5.21-60.0-jetty-console.war --sslProxied --port 8000 --forwarded --headless
 ```
-** RUN **
+**RUN**
 ```
 docker run --rm \
 -v YOUR-PATH/my_interproscan:/interproscan/ \
@@ -70,8 +70,7 @@ docker run --rm \
 -w /interproscan/interproscan-5.21-60.0 \
 -it interproscan:5.21-60.0
 ```
-
-** TEST **
+**TEST**
 ```
 ./interproscan.sh -i test_proteins.fasta -d /mydata -T /mytmp -dp
 ./interproscan.sh -i test_proteins.fasta -d /mydata -T /mytmp -pa -goterms
