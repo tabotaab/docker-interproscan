@@ -22,7 +22,7 @@ ENV JAVA_HOME=/usr/lib/jvm/java-8-oracle
 ENV CLASSPATH=/usr/lib/jvm/java-8-oracle/bin
 
 EXPOSE 8000
-CMD java -Xmx2000m -jar /interproscan/i5_lookup_service/lookup_service_5.21-60.0/server-5.21-60.0-jetty-console.war --sslProxied --port 8000 --forwarded --contextPath /interproscan/i5_lookup_service --headless &
+CMD java -Xmx2000m -jar /interproscan/i5_lookup_service/lookup_service_5.24-63.0/server-5.24-63.0-jetty-console.war --sslProxied --port 8000 --forwarded --contextPath /interproscan/i5_lookup_service --headless &
 CMD /bin/bash 
 
 
