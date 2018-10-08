@@ -75,4 +75,4 @@ docker run --rm \
 ./interproscan.sh -i test_proteins.fasta -d /mydata -T /mytmp -dp
 ./interproscan.sh -i test_proteins.fasta -d /mydata -T /mytmp -pa -goterms
 ```
-Check also https://hub.docker.com/r/tabotaab/interproscan/
+Check also https://hub.docker.com/r/tabotaab/docker-interproscan/
