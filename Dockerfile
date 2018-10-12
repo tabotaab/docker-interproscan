@@ -2,7 +2,6 @@
 FROM ubuntu:latest
 # Read more on: https://hub.docker.com/r/tabotaab/interproscan/
 
-
 # Update the repository sources list
 RUN apt-get update
 RUN apt-get install -y -q software-properties-common 
@@ -21,8 +20,11 @@ RUN apt-get install -y -q oracle-java8-set-default
 ENV JAVA_HOME=/usr/lib/jvm/java-8-oracle
 ENV CLASSPATH=/usr/lib/jvm/java-8-oracle/bin
 
+ENV HTTP_PROXY=http://bio-mgt-prxy-01.mgt.rd.rijkzwaan.net:3128
+ENV HTTPS_PROXY=http://bio-mgt-prxy-01.mgt.rd.rijkzwaan.net:3128
+ENV http_proxy=http://bio-mgt-prxy-01.mgt.rd.rijkzwaan.net:3128
+ENV https_proxy=http://bio-mgt-prxy-01.mgt.rd.rijkzwaan.net:3128
+
 EXPOSE 8000
-CMD java -Xmx2000m -jar /interproscan/i5_lookup_service/lookup_service_5.24-63.0/server-5.24-63.0-jetty-console.war --sslProxied --port 8000 --forwarded --contextPath /interproscan/i5_lookup_service --headless &
+CMD java -Xmx2000m -jar /interproscan/i5_lookup_service/lookup_service_5.31-70.0/server-5.31-70.0-jetty-console.war --sslProxied --port 8000 --forwarded --contextPath /interproscan/i5_lookup_service --headless &
 CMD /bin/bash 
-
-
