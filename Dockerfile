@@ -1,6 +1,6 @@
 # Set the base image to Ubuntu
 FROM ubuntu:latest
-# Read more on: https://hub.docker.com/r/tabotaab/interproscan/
+# Read more on: https://hub.docker.com/r/tabotaab/docker-interproscan/
 
 # Update the repository sources list
 RUN apt-get update
