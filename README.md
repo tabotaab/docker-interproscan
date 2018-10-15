@@ -1,7 +1,7 @@
 # docker-interproscan
-**DO this before running docker**
+**Do these 3 steps before running docker**
 
-https://github.com/ebi-pf-team/interproscan/wiki/HowToDownload
+[Interproscan reference](https://github.com/ebi-pf-team/interproscan/wiki/HowToDownload)
 
 **1) Obtaining the core InterProScan software**
 
