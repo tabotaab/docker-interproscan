@@ -69,17 +69,17 @@ docker run --rm \
 -v FULL-PATH/my_interproscan:/interproscan/ \
 -v FULL-PATH/my_interproscan/i5_lookup_service:/interproscan/i5_lookup_service/ \
 -v FULL-OUTDIR-PATH:/outdatadir \
--v FULL-TMP-PATH:/mytmp \
 -w /interproscan/interproscan-5.31-70.0 \
--it interproscan:5.31-70.0
+-it docker-interproscan
 ```
 
 **TEST**
 
 There is a test file already in "interproscan-5.31-70.0" folder called "test_proteins.fasta".
 ```
-./interproscan.sh -i test_proteins.fasta -d /outdatadir -T /mytmp -dp
-./interproscan.sh -i test_proteins.fasta -d /outdatadir -T /mytmp -pa -goterms
+./interproscan.sh -i test_proteins.fasta -d /outdatadir -T /tmp -dp
+./interproscan.sh -i test_proteins.fasta -d /outdatadir -T /tmp -pa -goterms
 ```
+
 
 Check also https://hub.docker.com/r/tabotaab/docker-interproscan/
